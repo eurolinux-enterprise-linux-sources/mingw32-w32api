@@ -6,7 +6,7 @@
 
 Name:           mingw32-w32api
 Version:        3.14
-Release:        1%{?dist}.5
+Release:        2%{?dist}.2
 Summary:        Win32 header files and stubs
 
 
@@ -59,6 +59,14 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Rebuild.
+  Related: rhbz#719866
+
 * Mon Dec 27 2010 Andrew Beekhof <abeekhof@redhat.com> - 3.14-1.5
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
